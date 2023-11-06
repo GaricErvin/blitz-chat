@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H5TLRAYxx6NpZA2q04iJYpa5WaizRzcvK2grrIwOD1nY5stzCSR/j0o5D3XPU1Utiuo/88Aa6V1Wy4v2M1Y5tQ==",
+  "dgSpecHash": "wfMiDSGo4kJJnOctGIeSg1RlQaKWpelyxa0wEHJFDs6GuqNn2PAH6RKjAfS/Jxb1FKg5Wafa6i/xa/Slpe8fag==",
   "success": true,
-  "projectFilePath": "D:\\DATA\\repos\\blitz-chat\\blitz-chat\\blitz-chat.csproj",
+  "projectFilePath": "D:\\DATA\\repos\\blitz-chat\\blitz-chat.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ervin\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\ervin\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",

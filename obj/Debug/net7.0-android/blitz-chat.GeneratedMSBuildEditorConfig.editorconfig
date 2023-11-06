@@ -12,33 +12,33 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = blitz_chat
-build_property.ProjectDir = D:\DATA\repos\blitz-chat\blitz-chat\
+build_property.ProjectDir = D:\DATA\repos\blitz-chat\
 
-[D:/DATA/repos/blitz-chat/blitz-chat/App.xaml]
+[D:/DATA/repos/blitz-chat/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = blitz_chat.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[D:/DATA/repos/blitz-chat/blitz-chat/AppShell.xaml]
+[D:/DATA/repos/blitz-chat/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = blitz_chat.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[D:/DATA/repos/blitz-chat/blitz-chat/MainPage.xaml]
+[D:/DATA/repos/blitz-chat/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = blitz_chat.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[D:/DATA/repos/blitz-chat/blitz-chat/Resources/Styles/Colors.xaml]
+[D:/DATA/repos/blitz-chat/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = blitz_chat.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[D:/DATA/repos/blitz-chat/blitz-chat/Resources/Styles/Styles.xaml]
+[D:/DATA/repos/blitz-chat/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = blitz_chat.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
