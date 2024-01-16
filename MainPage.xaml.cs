@@ -2,23 +2,18 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
         public MainPage()
         {
             InitializeComponent();
+
+            Button registracijaButton = (Button)FindByName("RegistracijaButton");
+            registracijaButton.Clicked += OnRegistracijaButtonClicked;
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private async void OnRegistracijaButtonClicked(object sender, EventArgs e)
         {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            // Navigate to the new registration page
+            await Navigation.PushAsync(new RegistrationPage());
         }
     }
 }
