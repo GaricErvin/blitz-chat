@@ -7,7 +7,7 @@
         <Label TextColor="#006385">Prijava</Label>
         <Entry Placeholder="Username"/>
         <Entry Placeholder="Password" IsPassword="True"/>
-        <Button Text="Login"/>
+        <Button x:Name="LoginButton" Text="Login" Clicked="OnLoginButtonClicked"/>
         <Button x:Name="RegistracijaButton" Text="Registracija"/>
     </StackLayout>
 
