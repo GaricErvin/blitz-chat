@@ -8,10 +8,12 @@ namespace UporabniskiVmesnik.ViewModels
 {
     public class Uporabnik
     {
-        public int id { get; set; }
+        public string id { get; set; }
         public string Email { get; set; }
         public string Geslo { get; set; }   
-        public string Username { get; set; }
+        public string Profilna { get; set; }
+        public string Status { get; set; }
+
 
     }
 }
