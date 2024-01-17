@@ -1,32 +1,25 @@
 using Firebase.Auth;
 using Firebase.Database;
 using Microsoft.Maui.ApplicationModel;
-using UporabniskiVmesnik.ViewModels;
 using Google.Cloud.Firestore;
 using FirebaseAdmin;
 using Firebase.Database.Query;
-
-
+using blitz_chat.Models;
+using UporabniskiVmesnik.Models;
 namespace blitz_chat;
 
 public partial class RegistrationPage : ContentPage
 {
-    private readonly FirebaseClient firebase;
-    public static string firebaseUrl = "https://blitzchat-4a405-default-rtdb.europe-west1.firebasedatabase.app/";
-
+    public FirebaseClient firebase;
     public RegistrationPage()
     {
         InitializeComponent();
-        firebase = InitializeFirebase();
-        //BindingContext = new ViewModels.RegistrationViewModel(Navigation);
+        FirebaseContext firebaseContext = new FirebaseContext();
+        firebaseContext.InitializeFirebase();
+        firebase = firebaseContext.firebase;
     }
 
-    private FirebaseClient InitializeFirebase()
-    {
-        return new FirebaseClient(firebaseUrl);
-    }
-
-    public async Task WriteToFirebase(Uporabnik uporabnik)
+    public async Task RegisterUserToFirebase(Uporabnik uporabnik)
     {
         try
         {
@@ -38,16 +31,24 @@ public partial class RegistrationPage : ContentPage
             Console.WriteLine($"Error writing to Firebase: {ex.Message}");
         }
     }
-
     private async void RegisterButton_Clicked(object sender, EventArgs e)
     {
-        var user = new Uporabnik
+        if (EmailEntry.Text != null & PasswordEntry.Text != null)
         {
-            Email = EmailEntry.Text,
-            Geslo = PasswordEntry.Text,
-            Profilna = "profilna1.png",
-            Status = "Nothing here"
-        };
-        await WriteToFirebase(user);
+            Uporabnik user = new Uporabnik
+            {
+                Email = EmailEntry.Text,
+                Geslo = PasswordEntry.Text,
+                Profilna = "profilna1.png",
+                Status = "Nothing here"
+            };
+            await RegisterUserToFirebase(user);
+            await Navigation.PushAsync(new MainPage());
+        }
+        else
+        {
+            await DisplayAlert("Napaka!", "Polja nesmejo biti prazna!", "OK");
+        }
+
     }
 }
