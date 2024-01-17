@@ -5,10 +5,10 @@
 
     <StackLayout VerticalOptions="Start" Padding="20" Spacing="10">
         <Label TextColor="#006385">Prijava</Label>
-        <Entry Placeholder="Email" Text="{Binding email}"/>
-        <Entry Placeholder="Password" IsPassword="True" Text="{Binding geslo}" />
-        <Button Text="Login" Command="{Binding PrijavaBtn}" />
-        <Button Text="Registracija" Command="{Binding RegistracijaBtn}" />
+        <Entry Placeholder="Email"/>
+        <Entry Placeholder="Password" IsPassword="True" />
+        <Button Text="Login" />
+        <Button Text="Registracija" Clicked="Register_Click" />
     </StackLayout>
 
 </ContentPage>

@@ -5,10 +5,10 @@
         public MainPage()
         {
             InitializeComponent();
-            BindingContext = new ViewModels.VpisViewModel(Navigation);
+            //BindingContext = new ViewModels.VpisViewModel(Navigation);
         }
 
-        private async void OnRegistracijaButtonClicked(object sender, EventArgs e)
+        private async void Register_Click(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new RegistrationPage());
         }
