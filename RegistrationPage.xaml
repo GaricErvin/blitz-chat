@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="blitz_chat.RegistrationPage"
              Title="RegistrationPage">
-    
+      
     
     <StackLayout VerticalOptions="Start" Padding="20" Spacing="10">
         <Label TextColor="#006385">Registracija</Label>
@@ -11,6 +11,6 @@
         <Entry Text="{Binding geslo}" Placeholder="Password" IsPassword="True" />
         <Button Text="Registracija" Command="{Binding RegistracijaUporabnika}" />
     </StackLayout>
-    
+
     
 </ContentPage>
