@@ -1,4 +1,15 @@
-﻿obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
+﻿obj\Debug\net7.0-android\resizetizer\r\drawable\disband.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\edit_icon.jpg
+obj\Debug\net7.0-android\resizetizer\r\drawable\edit_icon.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\edit_icon1.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\profilna.jpg
+obj\Debug\net7.0-android\resizetizer\r\drawable\profilna.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\profilna1.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\profilna_edit.jpg
+obj\Debug\net7.0-android\resizetizer\r\drawable\profilna_edit.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\profilna_edit1.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\save.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\splash.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\dotnet_bot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\splash.png
