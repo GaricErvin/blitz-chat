@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="blitz_chat.PrijateljiPage"
+             Title="PrijateljiPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <StackLayout Grid.Row="0" BackgroundColor="#006385" Padding="10,5,10,5" Orientation="Horizontal">
+            <Label Text="Blitzchat" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="BlitzchatClicked" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Button Text="Izpis" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="End" Clicked="OnIzpisButtonClicked"/>
+        </StackLayout>
+
+        <!-- Main -->
+        <StackLayout Grid.Row="1">
+            <Entry Placeholder="Search: " />
+
+        </StackLayout>
+
+        <!-- Footer -->
+        <StackLayout Grid.Row="2" Orientation="Horizontal" BackgroundColor="#006385" Padding="10,5,10,5">
+            <Button Text="Profile" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Clicked="OnProfileTabClicked"/>
+            <Button Text="Prijatelji" TextColor="LightGray" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    </Grid>
+    
+</ContentPage>
