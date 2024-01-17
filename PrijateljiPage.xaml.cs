@@ -27,7 +27,7 @@ public partial class PrijateljiPage : ContentPage
         }
     }
 
-    private async void OnProfileTab(object sender, EventArgs e)
+    private async void OnProfileTabClicked(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new ProfilePage());
     }
