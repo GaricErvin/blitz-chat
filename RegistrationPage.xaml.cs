@@ -35,15 +35,23 @@ public partial class RegistrationPage : ContentPage
     {
         if (EmailEntry.Text != null & PasswordEntry.Text != null)
         {
-            Uporabnik user = new Uporabnik
+            if (PasswordEntry.Text == PasswordEntry2.Text)
             {
-                Email = EmailEntry.Text,
-                Geslo = PasswordEntry.Text,
-                Profilna = "profilna1.png",
-                Status = "Nothing here"
-            };
-            await RegisterUserToFirebase(user);
-            await Navigation.PushAsync(new MainPage());
+                Uporabnik user = new Uporabnik
+                {
+                    Email = EmailEntry.Text,
+                    Geslo = PasswordEntry.Text,
+                    Profilna = "profilna1.png",
+                    Status = "Nothing here"
+                };
+                await RegisterUserToFirebase(user);
+                await Navigation.PushAsync(new MainPage());
+            }
+            else
+            {
+                await DisplayAlert("Napaka!", "Gesla se morata ujemati!", "OK");
+
+            }
         }
         else
         {
