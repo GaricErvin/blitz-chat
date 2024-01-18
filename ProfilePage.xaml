@@ -23,8 +23,8 @@
         <!-- Main -->
         <StackLayout Grid.Row="1">
             <Grid>
-                <Frame x:Name="CircleFrame" CornerRadius="75" WidthRequest="150" HeightRequest="150" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="0,20">
-                    <Image x:Name="ProfileImage" Aspect="AspectFill">
+                <Frame x:Name="CircleFrame" IsClippedToBounds="True" CornerRadius="75" WidthRequest="150" HeightRequest="150" HorizontalOptions="Fill" VerticalOptions="Fill" Margin="0,20">
+                    <Image x:Name="ProfileImage" Margin="-20" WidthRequest="150" HeightRequest="150" Aspect="Fill">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Tapped="ChangeImageClicked"/>
                         </Image.GestureRecognizers>

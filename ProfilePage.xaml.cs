@@ -107,13 +107,27 @@ public partial class ProfilePage : ContentPage
 
     async Task ImagePickerTapped()
     {
+        try
+        {
             var result = await MediaPicker.PickPhotoAsync(new MediaPickerOptions
             {
                 Title = "Pick Image"
             });
 
-        await SaveImageTodb(result.FullPath.ToString());
-        return;
+            if(result != null)
+            {
+                await SaveImageTodb(result.FullPath.ToString());
+                string UserID = await SecureStorage.Default.GetAsync("UserID");
+                ProfileImage.Source = "https://firebasestorage.googleapis.com/v0/b/blitzchat-4a405.appspot.com/o/Profilne%2F" + UserID + "?alt=media";
+            }
+            
+            return;
+        }
+        catch(Exception ex)
+        {
+            await DisplayAlert("Napaka!", "Datoteka ni vredu", "OK");
+        }
+
     }
 
     private void OnEditIconClicked(object sender, EventArgs e)
@@ -176,9 +190,6 @@ public partial class ProfilePage : ContentPage
         if(ProfileImage.Source.ToString() == "File: profilna_edit1.png")
         {
             await ImagePickerTapped();
-
-            string UserID = await SecureStorage.Default.GetAsync("UserID");
-            ProfileImage.Source = "https://firebasestorage.googleapis.com/v0/b/blitzchat-4a405.appspot.com/o/Profilne%2F"+UserID+"?alt=media";
         }
     }
 
