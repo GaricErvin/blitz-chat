@@ -373,3 +373,6 @@ C:\Users\mihah\OneDrive\Documents\GitHub\blitz-chat\obj\Debug\net7.0-windows10.0
 C:\Users\mihah\OneDrive\Documents\GitHub\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
 C:\Users\mihah\OneDrive\Documents\GitHub\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
 C:\Users\mihah\OneDrive\Documents\GitHub\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\blitz-chat.GeneratedMSBuildEditorConfig.editorconfig
+D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\add.scale-100.png
+D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\decline.scale-100.png
+D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dodaj.scale-100.png

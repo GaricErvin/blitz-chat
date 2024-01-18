@@ -27,13 +27,9 @@
             <Button Text="Izpis" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="End" Clicked="OnIzpisButtonClicked"/>
         </StackLayout>
 
-
-
-
         <!-- Main -->
-        <StackLayout Grid.Row="1">
-            <Entry Placeholder="Search: " />
-
+        <StackLayout x:Name="labelContainer" Grid.Row="1" VerticalOptions="Start" Padding="20" Spacing="10">
+            
         </StackLayout>
 
         <!-- Footer -->

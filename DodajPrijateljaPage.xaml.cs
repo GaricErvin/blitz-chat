@@ -1,11 +1,9 @@
-using blitz_chat.Models;
+Ôªøusing blitz_chat.Models;
 using Firebase.Database;
 using Firebase.Database.Query;
 using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
-using Microsoft.Maui.Storage;
-using Xamarin.Google.Crypto.Tink.Subtle;
 
 namespace blitz_chat;
 
@@ -43,70 +41,89 @@ public partial class DodajPrijateljaPage : ContentPage
         FirebaseResponse response2 = await client.GetAsync("Prijateljstva");
         Prijateljstva = response2.ResultAs<Dictionary<string, Prijateljstva>>();
 
-        foreach (var item in Prijateljstva)
+        if (Prijateljstva != null)
         {
-            string prijateljstvaKey = item.Key;
-            Prijateljstva prijateljstvo = item.Value;
-
-            if (prijateljstvo.IsFriendConfirmed == false & prijateljstvo.uid1 == UserID)
+            foreach (var item in Prijateljstva)
             {
-                foreach (var item2 in Uporabniki)
+                string prijateljstvaKey = item.Key;
+                Prijateljstva prijateljstvo = item.Value;
+
+                if (prijateljstvo.IsFriendConfirmed == false & prijateljstvo.uid1 == UserID)
                 {
-                    if(item2.Key.ToString() == prijateljstvo.uid2.ToString())
+                    foreach (var item2 in Uporabniki)
                     {
-                        StackLayout labelContainer = new StackLayout
+                        if (item2.Key.ToString() == prijateljstvo.uid2.ToString())
                         {
-                            Orientation = StackOrientation.Horizontal
-                        };
-
-                        
-                        Label label = new Label
-                        {
-                            Text = item2.Value.Email.ToString(),
-                            FontSize = 18
-                        };
-
-
-                        var image1 = new Image
-                        {
-                            Source = "add.png",
-                            WidthRequest = 20,
-                            HeightRequest = 20,
-                            Margin = new Thickness(10, 0, 0, 0) 
-                        };
-                        image1.GestureRecognizers.Add(new TapGestureRecognizer
-                        {
-                            Command = new Command(() =>
+                            StackLayout labelContainer = new StackLayout
                             {
-                                //DO DO: Spremeni bool v prijateljstvu database v true, da potrdi prijateljstvo
+                                Orientation = StackOrientation.Horizontal
+                            };
 
 
-                            })
-                        });
-
-
-                        var image2 = new Image
-                        {
-                            Source = "decline.png",
-                            WidthRequest = 30,
-                            HeightRequest = 30,
-                            Margin = new Thickness(10, 0, 0, 0)
-                        };
-                        image2.GestureRecognizers.Add(new TapGestureRecognizer
-                        {
-                            Command = new Command(async () =>
+                            Label label = new Label
                             {
-                                this.labelContainer.Children.Remove(labelContainer);
-                                await DeleteChildFromFirebase(prijateljstvaKey);
-                            })
-                        });
+                                Text = item2.Value.Email.ToString(),
+                                FontSize = 18
+                            };
 
 
-                        labelContainer.Children.Add(label);
-                        labelContainer.Children.Add(image1);
-                        labelContainer.Children.Add(image2);
+                            var image1 = new Image
+                            {
+                                Source = "add.png",
+                                WidthRequest = 20,
+                                HeightRequest = 20,
+                                Margin = new Thickness(10, 0, 0, 0)
+                            };
+                            image1.GestureRecognizers.Add(new TapGestureRecognizer
+                            {
+                                Command = new Command(async () =>
+                                {
+                                    Prijateljstva add = new Prijateljstva
+                                    {
+                                        uid1 = prijateljstvo.uid1,
+                                        uid2 = prijateljstvo.uid2,
+                                        IsFriendConfirmed = true,
+                                    };
 
-                        this.labelContainer.Children.Add(labelContainer);
+                                    try
+                                    {
+                                        var firebaseRoot = firebase.Child("Prijateljstva").Child(prijateljstvaKey);
+                                        await firebaseRoot.PutAsync(add);
+                                        this.labelContainer.Children.Remove(labelContainer);
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        Console.WriteLine($"Error writing to Firebase: {ex.Message}");
+                                    }
+
+
+                                })
+                            });
+
+
+                            var image2 = new Image
+                            {
+                                Source = "decline.png",
+                                WidthRequest = 30,
+                                HeightRequest = 30,
+                                Margin = new Thickness(10, 0, 0, 0)
+                            };
+                            image2.GestureRecognizers.Add(new TapGestureRecognizer
+                            {
+                                Command = new Command(async () =>
+                                {
+                                    this.labelContainer.Children.Remove(labelContainer);
+                                    await DeleteChildFromFirebase(prijateljstvaKey);
+                                })
+                            });
+
+
+                            labelContainer.Children.Add(label);
+                            labelContainer.Children.Add(image1);
+                            labelContainer.Children.Add(image2);
+
+                            this.labelContainer.Children.Add(labelContainer);
+                        }
                     }
                 }
             }
@@ -159,27 +176,34 @@ public partial class DodajPrijateljaPage : ContentPage
 
         foreach (var item in Uporabniki)
         {
-            if (item.Value.Email == EmailEntry.Text.ToString())
+            if(EmailEntry.Text != null)
             {
-                uid = item.Key.ToString();
+                if (item.Value.Email == EmailEntry.Text.ToString())
+                {
+                    uid = item.Key.ToString();
+                }
             }
         }
 
-        foreach (var item in Prijateljstva.Values)
+        if(Prijateljstva != null)
         {
-            if (item.IsFriendConfirmed == false & item.uid1 == uid & item.uid2 == UserID)
+            foreach (var item in Prijateljstva.Values)
             {
-                await DisplayAlert("Napaka!", "Ponovno poöiljanje proönje ni mogo?e!", "OK");
-                await Navigation.PushAsync(new DodajPrijateljaPage());
-                return;
-            }
-            else if(item.IsFriendConfirmed == true & item.uid1 == uid & item.uid2 == UserID)
-            {
-                await DisplayAlert("Napaka!", "S to osebo ste ûe prijatelji!", "OK");
-                await Navigation.PushAsync(new DodajPrijateljaPage());
-                return;
+                if (item.IsFriendConfirmed == false & item.uid1 == uid & item.uid2 == UserID || item.IsFriendConfirmed == false & item.uid1 == UserID & item.uid2 == uid)
+                {
+                    await DisplayAlert("Napaka!", "Ponovno po≈°iljanje pro≈°nje ni mogoƒçe!", "OK");
+                    await Navigation.PushAsync(new DodajPrijateljaPage());
+                    return;
+                }
+                else if (item.IsFriendConfirmed == true & item.uid1 == uid & item.uid2 == UserID || item.IsFriendConfirmed == true & item.uid1 == UserID & item.uid2 == uid)
+                {
+                    await DisplayAlert("Napaka!", "S to osebo ste ≈æe prijatelji!", "OK");
+                    await Navigation.PushAsync(new DodajPrijateljaPage());
+                    return;
+                }
             }
         }
+
 
         if (EmailEntry.Text != null)
         {
@@ -212,7 +236,7 @@ public partial class DodajPrijateljaPage : ContentPage
 
     private async void OnIzpisButtonClicked(object sender, EventArgs e)
     {
-        bool result = await DisplayAlert("Pozor!", "Se res ûelite izpisati?", "Da", "Ne");
+        bool result = await DisplayAlert("Pozor!", "Se res ≈æelite izpisati?", "Da", "Ne");
 
         if (result)
         {

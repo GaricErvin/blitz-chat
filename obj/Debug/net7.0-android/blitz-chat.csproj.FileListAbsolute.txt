@@ -2109,3 +2109,11 @@ C:\Users\mihah\OneDrive\Documents\GitHub\blitz-chat\obj\Debug\net7.0-android\and
 C:\Users\mihah\OneDrive\Documents\GitHub\blitz-chat\obj\Debug\net7.0-android\android\assets\System.Xml.dll
 C:\Users\mihah\OneDrive\Documents\GitHub\blitz-chat\obj\Debug\net7.0-android\resizetizer\r\drawable\add.png
 C:\Users\mihah\OneDrive\Documents\GitHub\blitz-chat\obj\Debug\net7.0-android\resizetizer\r\drawable\decline.png
+D:\DATA\repos\blitz-chat\obj\Debug\net7.0-android\resizetizer\r\drawable\add.png
+D:\DATA\repos\blitz-chat\obj\Debug\net7.0-android\resizetizer\r\drawable\decline.png
+D:\DATA\repos\blitz-chat\obj\Debug\net7.0-android\resizetizer\r\drawable\dodaj.png
+D:\DATA\repos\blitz-chat\obj\Debug\net7.0-android\android\assets\FireSharp.dll
+D:\DATA\repos\blitz-chat\obj\Debug\net7.0-android\android\assets\Microsoft.Threading.Tasks.dll
+D:\DATA\repos\blitz-chat\obj\Debug\net7.0-android\android\assets\Microsoft.Threading.Tasks.Extensions.dll
+D:\DATA\repos\blitz-chat\obj\Debug\net7.0-android\android\assets\System.Net.Http.Extensions.dll
+D:\DATA\repos\blitz-chat\obj\Debug\net7.0-android\android\assets\System.Net.Http.Primitives.dll

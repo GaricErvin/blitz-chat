@@ -88,3 +88,6 @@ C:\Users\mihah\OneDrive\Documents\GitHub\blitz-chat\obj\Debug\net7.0-maccatalyst
 C:\Users\mihah\OneDrive\Documents\GitHub\blitz-chat\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\blitz-chat.csproj.CoreCompileInputs.cache
 C:\Users\mihah\OneDrive\Documents\GitHub\blitz-chat\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\add.png
 C:\Users\mihah\OneDrive\Documents\GitHub\blitz-chat\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\decline.png
+D:\DATA\repos\blitz-chat\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\add.png
+D:\DATA\repos\blitz-chat\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\decline.png
+D:\DATA\repos\blitz-chat\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\dodaj.png

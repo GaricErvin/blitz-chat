@@ -70,6 +70,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="ChatPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="DodajPrijateljaPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
