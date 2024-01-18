@@ -29,29 +29,29 @@
     <AppXManifest Include="D:\DATA\repos\blitz-chat\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-18T13:46:17.894</Modified>
+      <Modified>2024-01-18T03:00:36.504</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-01-18T13:46:17.382</Modified>
+      <Modified>2024-01-18T03:00:36.117</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\blitz-chat.runtimeconfig.json">
       <PackagePath>blitz-chat.runtimeconfig.json</PackagePath>
-      <Modified>2024-01-18T13:00:22.328</Modified>
+      <Modified>2024-01-18T01:00:04.020</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\blitz-chat.dll">
       <PackagePath>blitz-chat.dll</PackagePath>
-      <Modified>2024-01-18T13:46:15.140</Modified>
+      <Modified>2024-01-18T03:00:34.828</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>blitz-chat.exe</PackagePath>
-      <Modified>2024-01-18T13:46:15.167</Modified>
+      <Modified>2024-01-18T03:00:34.837</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\blitz-chat.deps.json">
       <PackagePath>blitz-chat.deps.json</PackagePath>
-      <Modified>2024-01-18T13:46:17.106</Modified>
+      <Modified>2024-01-18T01:00:03.822</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ervin\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.11\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1075,23 +1075,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.509</Modified>
+      <Modified>2024-01-17T23:13:53.897</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.539</Modified>
+      <Modified>2024-01-17T23:13:53.918</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.572</Modified>
+      <Modified>2024-01-17T23:13:53.940</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.612</Modified>
+      <Modified>2024-01-17T23:13:53.973</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.796</Modified>
+      <Modified>2024-01-17T23:13:54.123</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -1101,225 +1101,213 @@
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
       <Modified>2023-11-06T18:09:01.062</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\add.scale-100.png">
-      <PackagePath>add.scale-100.png</PackagePath>
-      <Modified>2024-01-18T12:47:59.004</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-01-18T13:00:09.857</Modified>
+      <Modified>2024-01-17T23:13:54.165</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.244</Modified>
+      <Modified>2024-01-17T23:13:54.458</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.266</Modified>
+      <Modified>2024-01-17T23:13:54.472</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.282</Modified>
+      <Modified>2024-01-17T23:13:54.484</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.306</Modified>
+      <Modified>2024-01-17T23:13:54.502</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.395</Modified>
+      <Modified>2024-01-17T23:13:54.567</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.967</Modified>
+      <Modified>2024-01-17T23:13:54.260</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.973</Modified>
+      <Modified>2024-01-17T23:13:54.266</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.991</Modified>
+      <Modified>2024-01-17T23:13:54.283</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.977</Modified>
+      <Modified>2024-01-17T23:13:54.271</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.983</Modified>
+      <Modified>2024-01-17T23:13:54.274</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.934</Modified>
+      <Modified>2024-01-17T23:13:54.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.938</Modified>
+      <Modified>2024-01-17T23:13:54.240</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.959</Modified>
+      <Modified>2024-01-17T23:13:54.257</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.942</Modified>
+      <Modified>2024-01-17T23:13:54.244</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.950</Modified>
+      <Modified>2024-01-17T23:13:54.250</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.875</Modified>
+      <Modified>2024-01-17T23:13:54.174</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.881</Modified>
+      <Modified>2024-01-17T23:13:54.178</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.886</Modified>
+      <Modified>2024-01-17T23:13:54.185</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.891</Modified>
+      <Modified>2024-01-17T23:13:54.189</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.899</Modified>
+      <Modified>2024-01-17T23:13:54.196</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.903</Modified>
+      <Modified>2024-01-17T23:13:54.204</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.907</Modified>
+      <Modified>2024-01-17T23:13:54.212</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.927</Modified>
+      <Modified>2024-01-17T23:13:54.230</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.911</Modified>
+      <Modified>2024-01-17T23:13:54.218</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.917</Modified>
+      <Modified>2024-01-17T23:13:54.222</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.064</Modified>
+      <Modified>2024-01-17T23:13:54.335</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.072</Modified>
+      <Modified>2024-01-17T23:13:54.340</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.082</Modified>
+      <Modified>2024-01-17T23:13:54.345</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.094</Modified>
+      <Modified>2024-01-17T23:13:54.356</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.119</Modified>
+      <Modified>2024-01-17T23:13:54.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.023</Modified>
+      <Modified>2024-01-17T23:13:54.309</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.027</Modified>
+      <Modified>2024-01-17T23:13:54.312</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.034</Modified>
+      <Modified>2024-01-17T23:13:54.317</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.042</Modified>
+      <Modified>2024-01-17T23:13:54.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.057</Modified>
+      <Modified>2024-01-17T23:13:54.330</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.996</Modified>
+      <Modified>2024-01-17T23:13:54.287</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.001</Modified>
+      <Modified>2024-01-17T23:13:54.291</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.005</Modified>
+      <Modified>2024-01-17T23:13:54.294</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.010</Modified>
+      <Modified>2024-01-17T23:13:54.300</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.019</Modified>
+      <Modified>2024-01-17T23:13:54.306</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.125</Modified>
+      <Modified>2024-01-17T23:13:54.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.138</Modified>
+      <Modified>2024-01-17T23:13:54.390</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.152</Modified>
+      <Modified>2024-01-17T23:13:54.403</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.171</Modified>
+      <Modified>2024-01-17T23:13:54.418</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.224</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\decline.scale-100.png">
-      <PackagePath>decline.scale-100.png</PackagePath>
-      <Modified>2024-01-18T12:47:59.004</Modified>
+      <Modified>2024-01-17T23:13:54.449</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\disband.scale-100.png">
       <PackagePath>disband.scale-100.png</PackagePath>
       <Modified>2024-01-17T14:06:43.358</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dodaj.scale-100.png">
-      <PackagePath>dodaj.scale-100.png</PackagePath>
-      <Modified>2024-01-18T12:47:59.005</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.927</Modified>
+      <Modified>2024-01-17T23:13:54.148</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.944</Modified>
+      <Modified>2024-01-17T23:13:54.163</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.965</Modified>
+      <Modified>2024-01-17T23:13:54.177</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-01-18T13:00:09.992</Modified>
+      <Modified>2024-01-17T23:13:54.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-01-18T13:00:10.057</Modified>
+      <Modified>2024-01-17T23:13:54.266</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_icon1.scale-100.png">
       <PackagePath>edit_icon1.scale-100.png</PackagePath>

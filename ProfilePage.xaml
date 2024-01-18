@@ -43,10 +43,10 @@
                 </Image>
             </Grid>
 
-            <Entry x:Name="username" Text="jozkar93845" Margin="20,0,20,0" IsEnabled="False"/>
-            <Entry x:Name="email" Text="joze.grindogardar@gmail.com" Margin="20,0,20,0" IsEnabled="False"/>
+            <Entry x:Name="username" Text="username" Margin="20,0,20,0" IsEnabled="False"/>
+            <Entry x:Name="email" Text="email" Margin="20,0,20,0" IsEnabled="False"/>
             <Label Margin="25,0,20,0">Status: </Label>
-            <Editor x:Name="status" Text="Doing homework! :D" Margin="20,0,20,0" IsEnabled="False"/>
+            <Editor x:Name="status" Text="status" Margin="20,0,20,0" IsEnabled="False"/>
         </StackLayout>
 
 
