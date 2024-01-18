@@ -83,10 +83,10 @@ public partial class ProfilePage : ContentPage
         }
     }
 
-    async Task<string> SaveImageTodb(string photopath)
+    async Task SaveImageTodb(string FullPath)
     {
         string UserID = await SecureStorage.Default.GetAsync("UserID");
-        var stream = File.Open(photopath, FileMode.Open);
+        var stream = File.Open(FullPath, FileMode.Open);
 
         var auth = new FirebaseAuthProvider(new Firebase.Auth.FirebaseConfig("AIzaSyB3fZ6kPDh-L9njqcFUwx7kKUxiOw0ElGE"));
         var a = await auth.SignInWithEmailAndPasswordAsync("admin@admin.com", "admin1");
@@ -102,18 +102,18 @@ public partial class ProfilePage : ContentPage
             .Child(UserID)
             .PutAsync(stream);
 
-        return task.TargetUrl.ToString();
+        return;
     }
 
-    async Task<string> ImagePickerTapped()
+    async Task ImagePickerTapped()
     {
             var result = await MediaPicker.PickPhotoAsync(new MediaPickerOptions
             {
                 Title = "Pick Image"
             });
 
-        string URL = await SaveImageTodb(result.FullPath.ToString());
-        return URL.ToString();
+        await SaveImageTodb(result.FullPath.ToString());
+        return;
     }
 
     private void OnEditIconClicked(object sender, EventArgs e)
@@ -148,7 +148,7 @@ public partial class ProfilePage : ContentPage
         {
             Geslo = uporabnik.Geslo,
             Email = email.Text,
-            Profilna = profileImage.ToString(),
+            Profilna = "https://firebasestorage.googleapis.com/v0/b/blitzchat-4a405.appspot.com/o/Profilne%2F"+UserID+"?alt=media",
             Status = status.Text
         };
 
@@ -175,10 +175,10 @@ public partial class ProfilePage : ContentPage
     {
         if(ProfileImage.Source.ToString() == "File: profilna_edit1.png")
         {
-            var newImageURL = await ImagePickerTapped();
+            await ImagePickerTapped();
 
-            ProfileImage.Source = newImageURL.ToString();
-            profileImage = newImageURL.ToString();
+            string UserID = await SecureStorage.Default.GetAsync("UserID");
+            ProfileImage.Source = "https://firebasestorage.googleapis.com/v0/b/blitzchat-4a405.appspot.com/o/Profilne%2F"+UserID+"?alt=media";
         }
     }
 

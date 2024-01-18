@@ -29,13 +29,13 @@
     <AppXManifest Include="D:\DATA\repos\blitz-chat\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-18T19:45:00.511</Modified>
+      <Modified>2024-01-18T20:19:21.164</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-01-18T19:45:00.013</Modified>
+      <Modified>2024-01-18T20:19:20.675</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\blitz-chat.runtimeconfig.json">
       <PackagePath>blitz-chat.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\blitz-chat.dll">
       <PackagePath>blitz-chat.dll</PackagePath>
-      <Modified>2024-01-18T19:44:58.570</Modified>
+      <Modified>2024-01-18T20:19:19.187</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>blitz-chat.exe</PackagePath>
-      <Modified>2024-01-18T19:44:58.582</Modified>
+      <Modified>2024-01-18T20:19:19.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\blitz-chat.deps.json">
       <PackagePath>blitz-chat.deps.json</PackagePath>
