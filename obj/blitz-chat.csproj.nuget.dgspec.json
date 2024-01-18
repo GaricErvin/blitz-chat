@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DATA\\repos\\blitz-chat\\blitz-chat.csproj": {}
+    "C:\\Users\\mihah\\OneDrive\\Documents\\GitHub\\blitz-chat\\blitz-chat.csproj": {}
   },
   "projects": {
-    "D:\\DATA\\repos\\blitz-chat\\blitz-chat.csproj": {
+    "C:\\Users\\mihah\\OneDrive\\Documents\\GitHub\\blitz-chat\\blitz-chat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DATA\\repos\\blitz-chat\\blitz-chat.csproj",
+        "projectUniqueName": "C:\\Users\\mihah\\OneDrive\\Documents\\GitHub\\blitz-chat\\blitz-chat.csproj",
         "projectName": "blitz-chat",
-        "projectPath": "D:\\DATA\\repos\\blitz-chat\\blitz-chat.csproj",
-        "packagesPath": "C:\\Users\\ervin\\.nuget\\packages\\",
-        "outputPath": "D:\\DATA\\repos\\blitz-chat\\obj\\",
+        "projectPath": "C:\\Users\\mihah\\OneDrive\\Documents\\GitHub\\blitz-chat\\blitz-chat.csproj",
+        "packagesPath": "C:\\Users\\mihah\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mihah\\OneDrive\\Documents\\GitHub\\blitz-chat\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ervin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mihah\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -96,18 +96,13 @@
               "version": "[7.0.0, )",
               "autoReferenced": true
             },
-            "Microsoft.Extensions.Logging.Abstractions": {
-              "target": "Package",
-              "version": "[7.0.0, )",
-              "autoReferenced": true
-            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[7.0.0, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.92, )",
+              "version": "[7.0.96, )",
               "autoReferenced": true
             },
             "RestSharp": {
@@ -198,7 +193,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         },
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
@@ -238,18 +233,13 @@
               "version": "[7.0.0, )",
               "autoReferenced": true
             },
-            "Microsoft.Extensions.Logging.Abstractions": {
-              "target": "Package",
-              "version": "[7.0.0, )",
-              "autoReferenced": true
-            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[7.0.0, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.92, )",
+              "version": "[7.0.96, )",
               "autoReferenced": true
             },
             "RestSharp": {
@@ -285,7 +275,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         },
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
@@ -325,18 +315,13 @@
               "version": "[7.0.0, )",
               "autoReferenced": true
             },
-            "Microsoft.Extensions.Logging.Abstractions": {
-              "target": "Package",
-              "version": "[7.0.0, )",
-              "autoReferenced": true
-            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[7.0.0, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.92, )",
+              "version": "[7.0.96, )",
               "autoReferenced": true
             },
             "RestSharp": {
@@ -373,7 +358,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         },
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
@@ -413,23 +398,18 @@
               "version": "[7.0.0, )",
               "autoReferenced": true
             },
-            "Microsoft.Extensions.Logging.Abstractions": {
-              "target": "Package",
-              "version": "[7.0.0, )",
-              "autoReferenced": true
-            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[7.0.0, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.92, )",
+              "version": "[7.0.96, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": {
               "target": "Package",
-              "version": "[7.0.92, )",
+              "version": "[7.0.96, )",
               "autoReferenced": true
             },
             "Microsoft.WindowsAppSDK": {
@@ -456,11 +436,11 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[7.0.11, 7.0.11]"
+              "version": "[7.0.12, 7.0.12]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[7.0.11, 7.0.11]"
+              "version": "[7.0.12, 7.0.12]"
             },
             {
               "name": "Microsoft.Windows.SDK.NET.Ref",
@@ -468,7 +448,7 @@
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[7.0.11, 7.0.11]"
+              "version": "[7.0.12, 7.0.12]"
             }
           ],
           "frameworkReferences": {
@@ -488,7 +468,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
