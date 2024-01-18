@@ -17,19 +17,25 @@
                     <TapGestureRecognizer Tapped="BlitzchatClicked" />
                 </Label.GestureRecognizers>
             </Label>
+
+            <Image Source="dodaj.png" WidthRequest="30" HeightRequest="30" Margin="0,0,10,0">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnDodajPrijateljaImageClicked" />
+                </Image.GestureRecognizers>
+            </Image>
+
             <Button Text="Izpis" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="End" Clicked="OnIzpisButtonClicked"/>
         </StackLayout>
 
         <!-- Main -->
-        <StackLayout Grid.Row="1">
-            <Entry Placeholder="Search: " />
-
+        <StackLayout x:Name="labelContainer" Grid.Row="1" VerticalOptions="Start" Padding="20" Spacing="10">
+            
         </StackLayout>
 
         <!-- Footer -->
         <StackLayout Grid.Row="2" Orientation="Horizontal" BackgroundColor="#006385" Padding="10,5,10,5">
-            <Button Text="Profile" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Clicked="OnProfileTabClicked"/>
-            <Button Text="Prijatelji" TextColor="LightGray" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Button Text="Profile" TextColor="Black" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Clicked="OnProfileTabClicked"/>
+            <Button Text="Prijatelji" BackgroundColor="LightGray" TextColor="Black" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
         </StackLayout>
     </Grid>
 </ContentPage>
