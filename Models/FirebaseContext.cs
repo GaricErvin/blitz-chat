@@ -11,7 +11,7 @@ namespace blitz_chat.Models
     public class FirebaseContext
     {
         public FirebaseClient firebase;
-        public static string firebaseUrl = "https://blitzchat-4a405-default-rtdb.europe-west1.firebasedatabase.app/";
+        public string firebaseUrl = "https://blitzchat-4a405-default-rtdb.europe-west1.firebasedatabase.app/";
 
 
         public void InitializeFirebase()

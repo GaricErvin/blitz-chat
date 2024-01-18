@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="blitz_chat.MainPage">
+             x:Class="blitz_chat.MainPage"
+             Title="Prijava">
 
     <StackLayout VerticalOptions="Start" Padding="20" Spacing="10">
-        <Label TextColor="#006385">Prijava</Label>
-        <Entry Placeholder="Email"/>
-        <Entry Placeholder="Password" IsPassword="True" />
-        <Button Text="Login" />
-        <Button Text="Registracija" Clicked="Register_Click" />
+        <Label TextColor="Black">Prijava</Label>
+        <Entry x:Name="EmailEntry" Placeholder="Email"/>
+        <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" />
+        <Button Text="Login" Clicked="LoginButton_Click"/>
+        <Button Text="Registracija" Clicked="RegisterButton_Click" />
     </StackLayout>
 
 </ContentPage>
