@@ -1,7 +1,6 @@
 ﻿using Firebase.Database;
 using blitz_chat.Models;
 using FireSharp.Response;
-using UporabniskiVmesnik.Models;
 using FireSharp.Interfaces;
 using FireSharp.Config;
 

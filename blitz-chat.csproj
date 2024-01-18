@@ -49,7 +49,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\add.png" />
+	  <None Remove="Resources\Images\decline.png" />
 	  <None Remove="Resources\Images\disband.png" />
+	  <None Remove="Resources\Images\dodaj.png" />
 	  <None Remove="Resources\Images\edit_icon1.png" />
 	  <None Remove="Resources\Images\profilna1.png" />
 	  <None Remove="Resources\Images\profilna_edit1.png" />
@@ -67,6 +70,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="ChatPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="DodajPrijateljaPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="MainMenu.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

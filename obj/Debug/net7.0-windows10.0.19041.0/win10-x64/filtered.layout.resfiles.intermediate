@@ -1,5 +1,6 @@
 OpenSans-Regular.ttf
 OpenSans-Semibold.ttf
+add.scale-100.png
 appicon.ico
 appiconLargeTile.scale-100.png
 appiconLargeTile.scale-125.png
@@ -46,7 +47,9 @@ appiconWideTile.scale-125.png
 appiconWideTile.scale-150.png
 appiconWideTile.scale-200.png
 appiconWideTile.scale-400.png
+decline.scale-100.png
 disband.scale-100.png
+dodaj.scale-100.png
 dotnet_bot.scale-100.png
 dotnet_bot.scale-125.png
 dotnet_bot.scale-150.png

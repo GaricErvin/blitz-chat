@@ -1,4 +1,7 @@
-﻿obj\Debug\net7.0-android\resizetizer\r\drawable\disband.png
+﻿obj\Debug\net7.0-android\resizetizer\r\drawable\add.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\decline.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\disband.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\dodaj.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\edit_icon1.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\profilna1.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\profilna_edit1.png

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="blitz_chat.DodajPrijateljaPage"
+             Title="Dodaj Prijatelja">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <StackLayout Grid.Row="0" BackgroundColor="#006385" Padding="10,5,10,5" Orientation="Horizontal">
+            <Label Text="Blitzchat" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand"/>
+            <Button Text="Izpis" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="End" Clicked="OnIzpisButtonClicked"/>
+        </StackLayout>
+
+        <!-- Main -->
+        <StackLayout x:Name="labelContainer" Grid.Row="1" VerticalOptions="Start" Padding="20" Spacing="10">
+            <Label TextColor="Black">Dodajanje prijatelja:</Label>
+            <Entry x:Name="EmailEntry" Placeholder="Email"/>
+            <Button Text="Dodaj" Clicked="DodajClicked"/>
+            <Label TextColor="Black">Prijateljske prošnje:</Label>
+        </StackLayout>
+
+        <!-- Footer -->
+        <StackLayout Grid.Row="2" Orientation="Horizontal" BackgroundColor="#006385" Padding="10,5,10,5">
+            <Button Text="Profile" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Clicked="OnProfileTabClicked"/>
+            <Button Text="Prijatelji" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Clicked="OnPrijateljiTabClicked"/>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

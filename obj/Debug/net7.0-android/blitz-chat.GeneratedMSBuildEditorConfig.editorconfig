@@ -26,6 +26,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = blitz_chat.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[D:/DATA/repos/blitz-chat/ChatPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = blitz_chat.ChatPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ChatPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ChatPage.xaml
+
+[D:/DATA/repos/blitz-chat/DodajPrijateljaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = blitz_chat.DodajPrijateljaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = DodajPrijateljaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = DodajPrijateljaPage.xaml
+
 [D:/DATA/repos/blitz-chat/MainMenu.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = blitz_chat.MainMenu.xaml

@@ -5,7 +5,6 @@ using Google.Cloud.Firestore;
 using FirebaseAdmin;
 using Firebase.Database.Query;
 using blitz_chat.Models;
-using UporabniskiVmesnik.Models;
 namespace blitz_chat;
 
 public partial class RegistrationPage : ContentPage
