@@ -29,29 +29,29 @@
     <AppXManifest Include="D:\DATA\repos\blitz-chat\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-18T00:03:50.619</Modified>
+      <Modified>2024-01-18T03:00:36.504</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-01-17T23:59:51.684</Modified>
+      <Modified>2024-01-18T03:00:36.117</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\blitz-chat.runtimeconfig.json">
       <PackagePath>blitz-chat.runtimeconfig.json</PackagePath>
-      <Modified>2024-01-17T23:42:28.742</Modified>
+      <Modified>2024-01-18T01:00:04.020</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\blitz-chat.dll">
       <PackagePath>blitz-chat.dll</PackagePath>
-      <Modified>2024-01-18T00:03:49.048</Modified>
+      <Modified>2024-01-18T03:00:34.828</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>blitz-chat.exe</PackagePath>
-      <Modified>2024-01-18T00:03:49.057</Modified>
+      <Modified>2024-01-18T03:00:34.837</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\DATA\repos\blitz-chat\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\blitz-chat.deps.json">
       <PackagePath>blitz-chat.deps.json</PackagePath>
-      <Modified>2024-01-17T23:42:28.575</Modified>
+      <Modified>2024-01-18T01:00:03.822</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ervin\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.11\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>

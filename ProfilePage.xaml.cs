@@ -1,10 +1,42 @@
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
+using blitz_chat.Models;
+using Microsoft.Maui.Storage;
+using Firebase.Database;
+using Firebase.Database.Query;
+
 namespace blitz_chat;
 
 public partial class ProfilePage : ContentPage
 {
+    public FirebaseClient firebase;
     public ProfilePage()
     {
+        FirebaseContext firebaseContext = new FirebaseContext();
+        firebaseContext.InitializeFirebase();
+        firebase = firebaseContext.firebase;
+        UserPodatki();
         InitializeComponent();
+    }
+
+    private async void UserPodatki()
+    {
+        string UserID = await SecureStorage.Default.GetAsync("UserID");
+
+        IFirebaseClient client = new FireSharp.FirebaseClient(new FirebaseConfig
+        {
+            AuthSecret = "AIzaSyB3fZ6kPDh-L9njqcFUwx7kKUxiOw0ElGE",
+            BasePath = "https://blitzchat-4a405-default-rtdb.europe-west1.firebasedatabase.app"
+        });
+
+
+        FirebaseResponse response = await client.GetAsync("Uporabniki/"+UserID);
+        Uporabnik uporabnik = response.ResultAs<Uporabnik>();
+
+        email.Text = uporabnik.Email.ToString();
+        status.Text = uporabnik.Status.ToString();
+        ProfileImage.Source = uporabnik.Profilna.ToString();
     }
 
     private async void BlitzchatClicked(object sender, EventArgs e)
@@ -19,14 +51,9 @@ public partial class ProfilePage : ContentPage
 
         if (result)
         {
-            //Uporabnika izpise, vrne na prijavo
+            await SecureStorage.Default.SetAsync("UserID", null);
             await Navigation.PushAsync(new MainPage());
         }
-        else
-        {
-            //Nic se ne zgodi
-        }
-
     }
 
     private async void OnPrijateljiTabClicked(object sender, EventArgs e)
@@ -48,12 +75,43 @@ public partial class ProfilePage : ContentPage
         DisbandIcon.IsVisible = true;
     }
 
-    private void OnSaveIconClicked(object sender, EventArgs e)
+    private async void OnSaveIconClicked(object sender, EventArgs e)
     {
-        //TO DO: shrani na novo vpisane podatke in slike v bazo
-
-        //staticno:
         ProfileImage.Source = "profilna1.png";
+
+        string UserID = await SecureStorage.Default.GetAsync("UserID");
+
+        IFirebaseClient client = new FireSharp.FirebaseClient(new FirebaseConfig
+        {
+            AuthSecret = "AIzaSyB3fZ6kPDh-L9njqcFUwx7kKUxiOw0ElGE",
+            BasePath = "https://blitzchat-4a405-default-rtdb.europe-west1.firebasedatabase.app"
+        });
+
+
+        FirebaseResponse response = await client.GetAsync("Uporabniki/" + UserID);
+        Uporabnik uporabnik = response.ResultAs<Uporabnik>();
+
+        string source = ProfileImage.Source.ToString();
+        string filetrim = "File: ";
+        string Profilna = source.Substring(filetrim.Length);
+
+        Uporabnik user = new Uporabnik
+        {
+            Geslo = uporabnik.Geslo,
+            Email = email.Text,
+            Profilna = Profilna,
+            Status = status.Text
+        };
+
+        try
+        {
+            var firebaseRoot = firebase.Child("Uporabniki").Child(UserID);
+            await firebaseRoot.PutAsync(user);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error writing to Firebase: {ex.Message}");
+        }
 
         CircleFrame.BackgroundColor = Color.FromRgb(255, 255, 255);
         EditIcon.IsVisible = true;
@@ -66,14 +124,7 @@ public partial class ProfilePage : ContentPage
 
     private void OnDisbandIconClicked(object sender, EventArgs e)
     {
-        //TO DO: vrne vse na stanje pred klikom na edit
-
-        //staticno:
-        ProfileImage.Source = "profilna1.png";
-        username.Text = "jozkar93845";
-        email.Text = "joze.grindogardar@gmail.com";
-        status.Text = "Doing homework! :D";
-
+        UserPodatki();
         CircleFrame.BackgroundColor = Color.FromRgb(255, 255, 255);
         EditIcon.IsVisible = true;
         username.IsEnabled = false;
