@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UporabniskiVmesnik.Models;
+using blitz_chat.Models;
 
 namespace blitz_chat.Models
 {

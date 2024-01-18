@@ -12,57 +12,63 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = blitz_chat
-build_property.ProjectDir = D:\DATA\repos\blitz-chat\
+build_property.ProjectDir = C:\Users\mihah\OneDrive\Documents\GitHub\blitz-chat\
 
-[D:/DATA/repos/blitz-chat/App.xaml]
+[C:/Users/mihah/OneDrive/Documents/GitHub/blitz-chat/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = blitz_chat.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[D:/DATA/repos/blitz-chat/AppShell.xaml]
+[C:/Users/mihah/OneDrive/Documents/GitHub/blitz-chat/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = blitz_chat.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[D:/DATA/repos/blitz-chat/MainMenu.xaml]
+[C:/Users/mihah/OneDrive/Documents/GitHub/blitz-chat/DodajPrijateljaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = blitz_chat.DodajPrijateljaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = DodajPrijateljaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = DodajPrijateljaPage.xaml
+
+[C:/Users/mihah/OneDrive/Documents/GitHub/blitz-chat/MainMenu.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = blitz_chat.MainMenu.xaml
 build_metadata.AdditionalFiles.TargetPath = MainMenu.xaml
 build_metadata.AdditionalFiles.RelativePath = MainMenu.xaml
 
-[D:/DATA/repos/blitz-chat/MainPage.xaml]
+[C:/Users/mihah/OneDrive/Documents/GitHub/blitz-chat/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = blitz_chat.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[D:/DATA/repos/blitz-chat/PrijateljiPage.xaml]
+[C:/Users/mihah/OneDrive/Documents/GitHub/blitz-chat/PrijateljiPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = blitz_chat.PrijateljiPage.xaml
 build_metadata.AdditionalFiles.TargetPath = PrijateljiPage.xaml
 build_metadata.AdditionalFiles.RelativePath = PrijateljiPage.xaml
 
-[D:/DATA/repos/blitz-chat/ProfilePage.xaml]
+[C:/Users/mihah/OneDrive/Documents/GitHub/blitz-chat/ProfilePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = blitz_chat.ProfilePage.xaml
 build_metadata.AdditionalFiles.TargetPath = ProfilePage.xaml
 build_metadata.AdditionalFiles.RelativePath = ProfilePage.xaml
 
-[D:/DATA/repos/blitz-chat/RegistrationPage.xaml]
+[C:/Users/mihah/OneDrive/Documents/GitHub/blitz-chat/RegistrationPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = blitz_chat.RegistrationPage.xaml
 build_metadata.AdditionalFiles.TargetPath = RegistrationPage.xaml
 build_metadata.AdditionalFiles.RelativePath = RegistrationPage.xaml
 
-[D:/DATA/repos/blitz-chat/Resources/Styles/Colors.xaml]
+[C:/Users/mihah/OneDrive/Documents/GitHub/blitz-chat/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = blitz_chat.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[D:/DATA/repos/blitz-chat/Resources/Styles/Styles.xaml]
+[C:/Users/mihah/OneDrive/Documents/GitHub/blitz-chat/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = blitz_chat.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

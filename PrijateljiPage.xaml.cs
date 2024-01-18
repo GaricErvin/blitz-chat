@@ -31,4 +31,10 @@ public partial class PrijateljiPage : ContentPage
     {
         await Navigation.PushAsync(new ProfilePage());
     }
+
+    private async void OnDodajPrijateljaImageClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new DodajPrijateljaPage());
+    }
+
 }

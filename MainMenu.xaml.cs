@@ -27,8 +27,8 @@ public partial class MainMenu : ContentPage
         await Navigation.PushAsync(new ProfilePage());
     }
 
-    private void OnPrijateljiTabClicked(object sender, EventArgs e)
+    private async void OnPrijateljiTabClicked(object sender, EventArgs e)
     {
-
+        await Navigation.PushAsync(new PrijateljiPage());
     }
 }

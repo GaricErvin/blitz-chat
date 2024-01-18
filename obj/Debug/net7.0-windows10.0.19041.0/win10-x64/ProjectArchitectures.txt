@@ -1,1 +1,0 @@
-D:\DATA\repos\blitz-chat\blitz-chat.csproj;x64
