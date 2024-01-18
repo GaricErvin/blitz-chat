@@ -10,6 +10,11 @@ using blitz_chat.Models;
 using Microsoft.Maui.Storage;
 using System.Threading.Tasks;
 using Microsoft.Maui.Controls;
+using FireSharp.Response;
+using FireSharp.Interfaces;
+using FireSharp.Config;
+
+
 
 namespace blitz_chat;
 
@@ -20,6 +25,8 @@ public partial class ChatPage : ContentPage
     public string uid2;
     public FirebaseClient firebase;
     public string prijateljstvaKey;
+    public static Dictionary<string, Uporabnik> Uporabniki = new Dictionary<string, Uporabnik>();
+
     public ChatPage(string a, string UserID, string uid)
     {
         InitializeComponent();
@@ -27,7 +34,7 @@ public partial class ChatPage : ContentPage
         uid1 = UserID;
         uid2 = uid;
         InitializeFirebase();
-        _timer = new Timer(RefreshPage, null, TimeSpan.FromSeconds(5), TimeSpan.FromSeconds(5));
+        _timer = new Timer(RefreshPage, null, TimeSpan.FromSeconds(3), TimeSpan.FromSeconds(3));
     }
 
     private async void RefreshPage(object state)
@@ -48,12 +55,28 @@ public partial class ChatPage : ContentPage
         var messages = await GetMessages(firebase, prijateljstvaKey);
         messagesCollectionView.ItemsSource = messages;
     }
-
+    string mail;
     private async void SendMessage_Clicked(object sender, EventArgs e)
     {
+        IFirebaseClient client = new FireSharp.FirebaseClient(new FireSharp.Config.FirebaseConfig
+        {
+            AuthSecret = "AIzaSyB3fZ6kPDh-L9njqcFUwx7kKUxiOw0ElGE",
+            BasePath = "https://blitzchat-4a405-default-rtdb.europe-west1.firebasedatabase.app/"
+        });
+
+        FirebaseResponse response = await client.GetAsync("Uporabniki");
+        Uporabniki = response.ResultAs<Dictionary<string, Uporabnik>>();
+
         if (prijateljstvaKey != null)
         {
-            await AddMessage(firebase, prijateljstvaKey, uid1, messageEntry.Text);
+            foreach (var item2 in Uporabniki)
+            {
+                if (item2.Key.ToString() == uid1)
+                {
+                    mail = item2.Value.Email;
+                }
+            }
+            await AddMessage(firebase, prijateljstvaKey, mail, messageEntry.Text);
             messageEntry.Text = string.Empty;
         }
         else
