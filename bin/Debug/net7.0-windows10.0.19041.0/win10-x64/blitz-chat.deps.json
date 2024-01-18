@@ -13,6 +13,7 @@
           "FirebaseAdmin": "2.4.0",
           "FirebaseAuthentication.net": "3.7.0",
           "FirebaseDatabase.net": "4.2.0",
+          "FirebaseStorage.net": "1.0.3",
           "Google.Cloud.Firestore": "3.4.0",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
@@ -830,6 +831,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Firebase.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -2294,6 +2307,13 @@
       "sha512": "sha512-Se6HQlm2QBHemcojMaZ0N4qHOp8H66dso3tGXiJUEaDpOwdHcNcUzF+bQDF8LfENCmBjxihYERHgL2IKZ5otwQ==",
       "path": "firebasedatabase.net/4.2.0",
       "hashPath": "firebasedatabase.net.4.2.0.nupkg.sha512"
+    },
+    "FirebaseStorage.net/1.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SupDHNUwNqcVwEo/HdFEWAXveQe3fU16q4wrrCxUVwP0a77zaddKp7vo2sHIW56DAsJn/gUfjDK3w0MuBhvzjQ==",
+      "path": "firebasestorage.net/1.0.3",
+      "hashPath": "firebasestorage.net.1.0.3.nupkg.sha512"
     },
     "FireSharp/2.0.4": {
       "type": "package",

@@ -5,6 +5,8 @@ using blitz_chat.Models;
 using Microsoft.Maui.Storage;
 using Firebase.Database;
 using Firebase.Database.Query;
+using Firebase.Storage;
+using Firebase.Auth;
 
 namespace blitz_chat;
 
@@ -24,7 +26,7 @@ public partial class ProfilePage : ContentPage
     {
         string UserID = await SecureStorage.Default.GetAsync("UserID");
 
-        IFirebaseClient client = new FireSharp.FirebaseClient(new FirebaseConfig
+        IFirebaseClient client = new FireSharp.FirebaseClient(new FireSharp.Config.FirebaseConfig
         {
             AuthSecret = "AIzaSyB3fZ6kPDh-L9njqcFUwx7kKUxiOw0ElGE",
             BasePath = "https://blitzchat-4a405-default-rtdb.europe-west1.firebasedatabase.app"
@@ -61,9 +63,62 @@ public partial class ProfilePage : ContentPage
         await Navigation.PushAsync(new PrijateljiPage());
     }
 
+    public async void TakePhoto()
+    {
+        if (MediaPicker.Default.IsCaptureSupported)
+        {
+            FileResult photo = await MediaPicker.Default.CapturePhotoAsync();
+
+            if (photo != null)
+            {
+                string localFilePath = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
+
+                using Stream sourceStream = await photo.OpenReadAsync();
+                using FileStream localFileStream = File.OpenWrite(localFilePath);
+
+                await sourceStream.CopyToAsync(localFileStream);
+            }
+        }
+    }
+
+    async Task SaveImageTodb(string photopath)
+    {
+        string UserID = await SecureStorage.Default.GetAsync("UserID");
+        var stream = File.Open(photopath, FileMode.Open);
+
+        var auth = new FirebaseAuthProvider(new Firebase.Auth.FirebaseConfig("AIzaSyB3fZ6kPDh-L9njqcFUwx7kKUxiOw0ElGE"));
+        var a = await auth.SignInWithEmailAndPasswordAsync("admin@admin.com", "admin1");
+
+        var task = new FirebaseStorage(
+            "blitzchat-4a405.appspot.com",
+             new FirebaseStorageOptions
+             {
+                 AuthTokenAsyncFactory = () => Task.FromResult(a.FirebaseToken),
+                 ThrowOnCancel = true,
+             })
+            .Child("Profilne")
+            .Child(UserID)
+            .PutAsync(stream);
+
+        var downloadUrl = await task;
+
+
+    }
+
+    async Task Image_Picker_Tapped()
+    {
+            var result = await MediaPicker.PickPhotoAsync(new MediaPickerOptions
+            {
+                Title = "Pick Image"
+            });
+
+        await SaveImageTodb(result.FullPath.ToString());
+    }
+
     private void OnEditIconClicked(object sender, EventArgs e)
     {
-        ProfileImage.Source = "profilna_edit1.png";
+        Image_Picker_Tapped();
+        //ProfileImage.Source = "profilna_edit1.png";
         CircleFrame.BackgroundColor = Color.FromRgb(211, 211, 211);
 
 
@@ -81,7 +136,7 @@ public partial class ProfilePage : ContentPage
 
         string UserID = await SecureStorage.Default.GetAsync("UserID");
 
-        IFirebaseClient client = new FireSharp.FirebaseClient(new FirebaseConfig
+        IFirebaseClient client = new FireSharp.FirebaseClient(new FireSharp.Config.FirebaseConfig
         {
             AuthSecret = "AIzaSyB3fZ6kPDh-L9njqcFUwx7kKUxiOw0ElGE",
             BasePath = "https://blitzchat-4a405-default-rtdb.europe-west1.firebasedatabase.app"

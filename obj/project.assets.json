@@ -51,6 +51,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "FireSharp/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -3085,6 +3098,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "FireSharp/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -6047,6 +6073,19 @@
           "lib/netstandard2.0/Firebase.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "FireSharp/2.0.4": {
@@ -9013,6 +9052,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "FireSharp/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -11975,6 +12027,19 @@
           "lib/netstandard2.0/Firebase.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "FireSharp/2.0.4": {
@@ -14941,6 +15006,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "FireSharp/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -17903,6 +17981,19 @@
           "lib/netstandard2.0/Firebase.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "FireSharp/2.0.4": {
@@ -20869,6 +20960,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "FireSharp/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -23833,6 +23937,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "FireSharp/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -25886,6 +26003,19 @@
           "lib/netstandard2.0/Firebase.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "FireSharp/2.0.4": {
@@ -28244,6 +28374,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "FireSharp/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -30598,6 +30741,19 @@
           "lib/netstandard2.0/Firebase.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "FireSharp/2.0.4": {
@@ -32956,6 +33112,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "FireSharp/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -35310,6 +35479,19 @@
           "lib/netstandard2.0/Firebase.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "FireSharp/2.0.4": {
@@ -37668,6 +37850,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "FireSharp/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -40024,6 +40219,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "FireSharp/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -42376,6 +42584,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "FireSharp/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -44423,6 +44644,19 @@
           "lib/netstandard2.0/Firebase.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "FireSharp/2.0.4": {
@@ -46775,6 +47009,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "FireSharp/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -49123,6 +49370,19 @@
           "lib/netstandard2.0/Firebase.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "FireSharp/2.0.4": {
@@ -51475,6 +51735,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "FireSharp/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -53823,6 +54096,19 @@
           "lib/netstandard2.0/Firebase.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "FireSharp/2.0.4": {
@@ -56175,6 +56461,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "FireSharp/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -58525,6 +58824,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "FireSharp/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -60871,6 +61183,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "FireSharp/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -63063,6 +63388,19 @@
           "lib/netstandard2.0/Firebase.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "FireSharp/2.0.4": {
@@ -65532,6 +65870,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "FireSharp/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -67997,6 +68348,19 @@
           "lib/netstandard2.0/Firebase.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "FireSharp/2.0.4": {
@@ -70466,6 +70830,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "FireSharp/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -72931,6 +73308,19 @@
           "lib/netstandard2.0/Firebase.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "FireSharp/2.0.4": {
@@ -75400,6 +75790,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "FireSharp/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -77867,6 +78270,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "FireSharp/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -80326,6 +80742,18 @@
         "firebasedatabase.net.nuspec",
         "lib/netstandard2.0/Firebase.dll",
         "lib/netstandard2.0/Firebase.xml"
+      ]
+    },
+    "FirebaseStorage.net/1.0.3": {
+      "sha512": "SupDHNUwNqcVwEo/HdFEWAXveQe3fU16q4wrrCxUVwP0a77zaddKp7vo2sHIW56DAsJn/gUfjDK3w0MuBhvzjQ==",
+      "type": "package",
+      "path": "firebasestorage.net/1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "firebasestorage.net.1.0.3.nupkg.sha512",
+        "firebasestorage.net.nuspec",
+        "lib/netstandard1.1/Firebase.Storage.dll"
       ]
     },
     "FireSharp/2.0.4": {
@@ -88821,6 +89249,7 @@
       "FirebaseAdmin >= 2.4.0",
       "FirebaseAuthentication.net >= 3.7.0",
       "FirebaseDatabase.net >= 4.2.0",
+      "FirebaseStorage.net >= 1.0.3",
       "Google.Cloud.Firestore >= 3.4.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
@@ -88846,6 +89275,7 @@
       "FirebaseAdmin >= 2.4.0",
       "FirebaseAuthentication.net >= 3.7.0",
       "FirebaseDatabase.net >= 4.2.0",
+      "FirebaseStorage.net >= 1.0.3",
       "Google.Cloud.Firestore >= 3.4.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
@@ -88860,6 +89290,7 @@
       "FirebaseAdmin >= 2.4.0",
       "FirebaseAuthentication.net >= 3.7.0",
       "FirebaseDatabase.net >= 4.2.0",
+      "FirebaseStorage.net >= 1.0.3",
       "Google.Cloud.Firestore >= 3.4.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
@@ -88874,6 +89305,7 @@
       "FirebaseAdmin >= 2.4.0",
       "FirebaseAuthentication.net >= 3.7.0",
       "FirebaseDatabase.net >= 4.2.0",
+      "FirebaseStorage.net >= 1.0.3",
       "Google.Cloud.Firestore >= 3.4.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
@@ -88962,6 +89394,10 @@
           "FirebaseDatabase.net": {
             "target": "Package",
             "version": "[4.2.0, )"
+          },
+          "FirebaseStorage.net": {
+            "target": "Package",
+            "version": "[1.0.3, )"
           },
           "Google.Cloud.Firestore": {
             "target": "Package",
@@ -89105,6 +89541,10 @@
             "target": "Package",
             "version": "[4.2.0, )"
           },
+          "FirebaseStorage.net": {
+            "target": "Package",
+            "version": "[1.0.3, )"
+          },
           "Google.Cloud.Firestore": {
             "target": "Package",
             "version": "[3.4.0, )"
@@ -89191,6 +89631,10 @@
           "FirebaseDatabase.net": {
             "target": "Package",
             "version": "[4.2.0, )"
+          },
+          "FirebaseStorage.net": {
+            "target": "Package",
+            "version": "[1.0.3, )"
           },
           "Google.Cloud.Firestore": {
             "target": "Package",
@@ -89279,6 +89723,10 @@
           "FirebaseDatabase.net": {
             "target": "Package",
             "version": "[4.2.0, )"
+          },
+          "FirebaseStorage.net": {
+            "target": "Package",
+            "version": "[1.0.3, )"
           },
           "Google.Cloud.Firestore": {
             "target": "Package",

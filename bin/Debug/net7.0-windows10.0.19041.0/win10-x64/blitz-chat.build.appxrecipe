@@ -616,6 +616,9 @@
     <AppxPackagedFile Include="C:\Users\ervin\.nuget\packages\firebasedatabase.net\4.2.0\lib\netstandard2.0\Firebase.dll">
       <PackagePath>Firebase.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ervin\.nuget\packages\firebasestorage.net\1.0.3\lib\netstandard1.1\Firebase.Storage.dll">
+      <PackagePath>Firebase.Storage.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ervin\.nuget\packages\firesharp\2.0.4\lib\portable-net45+sl5+wp8+win8\FireSharp.dll">
       <PackagePath>FireSharp.dll</PackagePath>
     </AppxPackagedFile>
