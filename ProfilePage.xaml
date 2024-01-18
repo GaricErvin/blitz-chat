@@ -24,7 +24,11 @@
         <StackLayout Grid.Row="1">
             <Grid>
                 <Frame x:Name="CircleFrame" CornerRadius="75" WidthRequest="150" HeightRequest="150" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="0,20">
-                    <Image x:Name="ProfileImage" Aspect="AspectFill" />
+                    <Image x:Name="ProfileImage" Aspect="AspectFill">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ChangeImageClicked"/>
+                        </Image.GestureRecognizers>
+                    </Image>
                 </Frame>
                 <Image x:Name="EditIcon" Source="edit_icon1.png" WidthRequest="30" HeightRequest="30" VerticalOptions="End" HorizontalOptions="End" Margin="0, -30, 10, 0">
                     <Image.GestureRecognizers>

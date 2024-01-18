@@ -13,6 +13,7 @@ namespace blitz_chat;
 public partial class ProfilePage : ContentPage
 {
     public FirebaseClient firebase;
+    public string profileImage = null;
     public ProfilePage()
     {
         FirebaseContext firebaseContext = new FirebaseContext();
@@ -39,6 +40,7 @@ public partial class ProfilePage : ContentPage
         email.Text = uporabnik.Email.ToString();
         status.Text = uporabnik.Status.ToString();
         ProfileImage.Source = uporabnik.Profilna.ToString();
+        profileImage = uporabnik.Profilna.ToString();
     }
 
     private async void BlitzchatClicked(object sender, EventArgs e)
@@ -81,7 +83,7 @@ public partial class ProfilePage : ContentPage
         }
     }
 
-    async Task SaveImageTodb(string photopath)
+    async Task<string> SaveImageTodb(string photopath)
     {
         string UserID = await SecureStorage.Default.GetAsync("UserID");
         var stream = File.Open(photopath, FileMode.Open);
@@ -100,25 +102,23 @@ public partial class ProfilePage : ContentPage
             .Child(UserID)
             .PutAsync(stream);
 
-        var downloadUrl = await task;
-
-
+        return task.TargetUrl.ToString();
     }
 
-    async Task Image_Picker_Tapped()
+    async Task<string> ImagePickerTapped()
     {
             var result = await MediaPicker.PickPhotoAsync(new MediaPickerOptions
             {
                 Title = "Pick Image"
             });
 
-        await SaveImageTodb(result.FullPath.ToString());
+        string URL = await SaveImageTodb(result.FullPath.ToString());
+        return URL.ToString();
     }
 
     private void OnEditIconClicked(object sender, EventArgs e)
     {
-        Image_Picker_Tapped();
-        //ProfileImage.Source = "profilna_edit1.png";
+        ProfileImage.Source = "profilna_edit1.png";
         CircleFrame.BackgroundColor = Color.FromRgb(211, 211, 211);
 
 
@@ -132,8 +132,6 @@ public partial class ProfilePage : ContentPage
 
     private async void OnSaveIconClicked(object sender, EventArgs e)
     {
-        ProfileImage.Source = "profilna1.png";
-
         string UserID = await SecureStorage.Default.GetAsync("UserID");
 
         IFirebaseClient client = new FireSharp.FirebaseClient(new FireSharp.Config.FirebaseConfig
@@ -146,15 +144,11 @@ public partial class ProfilePage : ContentPage
         FirebaseResponse response = await client.GetAsync("Uporabniki/" + UserID);
         Uporabnik uporabnik = response.ResultAs<Uporabnik>();
 
-        string source = ProfileImage.Source.ToString();
-        string filetrim = "File: ";
-        string Profilna = source.Substring(filetrim.Length);
-
         Uporabnik user = new Uporabnik
         {
             Geslo = uporabnik.Geslo,
             Email = email.Text,
-            Profilna = Profilna,
+            Profilna = profileImage.ToString(),
             Status = status.Text
         };
 
@@ -177,6 +171,17 @@ public partial class ProfilePage : ContentPage
         DisbandIcon.IsVisible = false;
     }
 
+    private async void ChangeImageClicked(object sender, EventArgs e)
+    {
+        if(ProfileImage.Source.ToString() == "File: profilna_edit1.png")
+        {
+            var newImageURL = await ImagePickerTapped();
+
+            ProfileImage.Source = newImageURL.ToString();
+            profileImage = newImageURL.ToString();
+        }
+    }
+
     private void OnDisbandIconClicked(object sender, EventArgs e)
     {
         UserPodatki();
@@ -188,5 +193,4 @@ public partial class ProfilePage : ContentPage
         SaveIcon.IsVisible = false;
         DisbandIcon.IsVisible = false;
     }
-
 }
