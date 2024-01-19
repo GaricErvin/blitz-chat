@@ -240,12 +240,8 @@ public partial class DodajPrijateljaPage : ContentPage
 
         if (result)
         {
-            //Uporabnika izpise, vrne na prijavo
+            await SecureStorage.Default.SetAsync("UserID", " ");
             await Navigation.PushAsync(new MainPage());
-        }
-        else
-        {
-            //Nic se ne zgodi
         }
     }
 

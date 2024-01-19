@@ -34,30 +34,39 @@ public partial class RegistrationPage : ContentPage
     }
     private async void RegisterButton_Clicked(object sender, EventArgs e)
     {
-        if (Regex.IsMatch(EmailEntry.Text, "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$") & Regex.IsMatch(PasswordEntry.Text, "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"))
+        if (PasswordEntry.Text != null & EmailEntry.Text != null)
         {
-            if (PasswordEntry.Text == PasswordEntry2.Text)
+            if (Regex.IsMatch(EmailEntry.Text, "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$") & Regex.IsMatch(PasswordEntry.Text, "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"))
             {
-                Uporabnik user = new Uporabnik
+                if (PasswordEntry.Text == PasswordEntry2.Text)
                 {
-                    Email = EmailEntry.Text,
-                    Geslo = PasswordEntry.Text,
-                    Profilna = "profilna1.png",
-                    Status = "Nothing here"
-                };
-                await RegisterUserToFirebase(user);
-                await Navigation.PushAsync(new MainPage());
+                    Uporabnik user = new Uporabnik
+                    {
+                        Email = EmailEntry.Text,
+                        Geslo = PasswordEntry.Text,
+                        Profilna = "profilna1.png",
+                        Status = "Nothing here"
+                    };
+                    await RegisterUserToFirebase(user);
+                    await Navigation.PushAsync(new MainPage());
+                }
+                else
+                {
+                    await DisplayAlert("Napaka!", "Gesla se morata ujemati!", "OK");
+
+                }
             }
             else
             {
-                await DisplayAlert("Napaka!", "Gesla se morata ujemati!", "OK");
-
+                await DisplayAlert("Napaka!", "Niste vnesli email-a ali geslo z 8 znakov in vsaj 1 številko!", "OK");
             }
+
         }
         else
         {
             await DisplayAlert("Napaka!", "Polja nesmejo biti prazna!", "OK");
         }
+
 
     }
 }

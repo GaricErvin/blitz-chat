@@ -25,13 +25,13 @@
 
         <!-- Main Content -->
         <Grid Grid.Row="1">
-            <CollectionView x:Name="messagesCollectionView">
+            <CollectionView x:Name="messagesCollectionView" ItemsSource="{Binding Sporocila}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Frame Margin="10,5,10,5">
                             <StackLayout>
-                                <Label Text="{Binding Sender}" FontSize="25" FontAttributes="Bold" Padding="0,0,0,10"/>
-                                <Label Text="{Binding Text}" FontSize="Body" Padding="0,0,0,20"/>
+                                <Label Text="{Binding Sender}" FontSize="20" FontAttributes="Bold" Padding="0,0,0,0"/>
+                                <Label Text="{Binding Text}" FontSize="15" Padding="0,0,0,5"/>
                                 <Label Text="{Binding Timestamp}" FontSize="10"/>
                             </StackLayout>
                         </Frame>
@@ -50,7 +50,7 @@
 
                 <Entry x:Name="messageEntry" Placeholder="Type your message" />
 
-                <Button Grid.Column="1" BackgroundColor="Black" Clicked="SendMessage_Clicked" Text="▶" TextColor="White" FontSize="24" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="50" HeightRequest="50"  />
+                <Button Grid.Column="1" BackgroundColor="Black" Clicked="SendMessage_Clicked" Text="▶" TextColor="White" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="50" HeightRequest="50"  />
             </Grid>
         </StackLayout>
 

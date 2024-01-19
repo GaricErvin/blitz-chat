@@ -5,7 +5,6 @@ using Firebase.Database;
 using Firebase.Database.Query;
 using Firebase.Storage;
 using Firebase.Auth;
-using Microsoft.Maui.Controls.PlatformConfiguration;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 
@@ -79,7 +78,7 @@ public partial class ProfilePage : ContentPage
 
         if (result)
         {
-            await SecureStorage.Default.SetAsync("UserID", null);
+            await SecureStorage.Default.SetAsync("UserID", " ");
             await Navigation.PushAsync(new MainPage());
         }
     }

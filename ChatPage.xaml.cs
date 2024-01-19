@@ -40,6 +40,20 @@ public partial class ChatPage : ContentPage
 
         Device.BeginInvokeOnMainThread(() =>
         {
+            messages.Reverse();
+
+            messagesCollectionView.ItemsSource = messages;
+        });
+    }
+
+    private async Task RefreshMessages()
+    {
+        var messages = await GetMessages(firebase, prijateljstvaKey);
+
+        Device.BeginInvokeOnMainThread(() =>
+        {
+            messages.Reverse();
+
             messagesCollectionView.ItemsSource = messages;
         });
     }
@@ -50,6 +64,7 @@ public partial class ChatPage : ContentPage
         firebaseContext.InitializeFirebase();
         firebase = firebaseContext.firebase;
         var messages = await GetMessages(firebase, prijateljstvaKey);
+        messages.Reverse();
         messagesCollectionView.ItemsSource = messages;
     }
     string mail;
@@ -75,6 +90,7 @@ public partial class ChatPage : ContentPage
             }
             await AddMessage(firebase, prijateljstvaKey, mail, messageEntry.Text);
             messageEntry.Text = string.Empty;
+            RefreshMessages();
         }
         else
         {
@@ -117,15 +133,12 @@ public partial class ChatPage : ContentPage
 
     private async void OnIzpisButtonClicked(object sender, EventArgs e)
     {
-        bool result = await DisplayAlert("Pozor!", "Ste prepri?ani da se želite izpisati?", "Da", "Ne");
+        bool result = await DisplayAlert("Pozor!", "Se res želite izpisati?", "Da", "Ne");
 
         if (result)
         {
+            await SecureStorage.Default.SetAsync("UserID", " ");
             await Navigation.PushAsync(new MainPage());
-        }
-        else
-        {
-
         }
     }
 

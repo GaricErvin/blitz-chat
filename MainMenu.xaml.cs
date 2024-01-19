@@ -81,7 +81,7 @@ public partial class MainMenu : ContentPage
 
         if (result)
         {
-            await SecureStorage.Default.SetAsync("UserID", null);
+            await SecureStorage.Default.SetAsync("UserID", " ");
             await Navigation.PushAsync(new MainPage());
         }
     }
