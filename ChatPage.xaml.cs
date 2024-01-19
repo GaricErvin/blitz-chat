@@ -31,7 +31,7 @@ public partial class ChatPage : ContentPage
         uid1 = UserID;
         uid2 = uid;
         InitializeFirebase();
-        _timer = new Timer(RefreshPage, null, TimeSpan.FromSeconds(3), TimeSpan.FromSeconds(3));
+        _timer = new Timer(RefreshPage, null, TimeSpan.FromSeconds(30), TimeSpan.FromSeconds(30));
     }
 
     private async void RefreshPage(object state)
@@ -88,10 +88,11 @@ public partial class ChatPage : ContentPage
         {
             Sender = senderUid,
             Text = text,
-            Timestamp = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss")
+            Timestamp = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss")
         };
 
         await firebase.Child($"Prijateljstva/{prijateljstvaKey}/Messages").PostAsync(message);
+        GetMessages(firebase, prijateljstvaKey);
     }
 
     static async Task<List<Message>> GetMessages(FirebaseClient firebase, string prijateljstvaKey)

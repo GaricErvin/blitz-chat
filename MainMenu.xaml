@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="blitz_chat.MainMenu"
-             Title="MainMenu">
+             Title="Main Menu">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -23,10 +23,16 @@
             </StackLayout>
         </Frame>
 
+
+        
         <!-- Main -->
         <StackLayout Grid.Row="1">
             <Entry Placeholder="Search: " />
+            <StackLayout x:Name="labelContainer">
+                
+            </StackLayout>
         </StackLayout>
+
 
         <!-- Footer -->
         <StackLayout Grid.Row="2" Orientation="Horizontal" BackgroundColor="Teal" Padding="10,5,10,5">
