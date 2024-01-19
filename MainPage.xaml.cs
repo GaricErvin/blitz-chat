@@ -69,7 +69,7 @@ namespace blitz_chat
                     Email = EmailEntry.Text,
                     Geslo = PasswordEntry.Text,
                     Profilna = "profilna1.png",
-                    Status = "Nothing here"
+                    Status = " "
                 };
                 await FindUser(user);
             }

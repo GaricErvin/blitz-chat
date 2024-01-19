@@ -36,47 +36,39 @@ public partial class PrijateljiPage : ContentPage
         {
             foreach (var prijatelj in prijateljstva)
             {
-                string prijateljstvaKey = prijatelj.Key;
-                Prijateljstva prijateljstvo = prijatelj.Value;
+                StackLayout labelContainer = new StackLayout
+                {
+                    Orientation = StackOrientation.Horizontal
+                };
 
                 if (prijatelj.Value.uid1 == UserID.ToString() || prijatelj.Value.uid2 == UserID.ToString() && prijatelj.Value.IsFriendConfirmed == true)
                 {
-                    StackLayout labelContainer = new StackLayout
-                    {
-                        Orientation = StackOrientation.Horizontal
-                    };
-
                     foreach (var user in prijatelji)
                     {
-                        if (user.Key.ToString() == prijatelj.Value.uid1 || user.Key.ToString() == prijatelj.Value.uid2 && user.Key.ToString() != UserID.ToString())
+                        if (user.Key.ToString() == prijatelj.Value.uid1 || user.Key.ToString() == prijatelj.Value.uid2 && user.Key.ToString() != UserID.ToString() )
                         {
                             Label label = new Label
                             {
                                 Text = user.Value.Email.ToString(),
                                 FontSize = 18,
-                                TextColor = Color.FromRgb(0, 0, 0)
+                                TextColor = Color.FromRgb(255,255,255)
                             };
 
                             label.GestureRecognizers.Add(new TapGestureRecognizer
                             {
                                 Command = new Command(async () =>
                                 {
-                                    await Navigation.PushAsync(new ChatPage(prijateljstvaKey, UserID, user.Key.ToString()));
+                                    await Navigation.PushAsync(new ChatPage());
                                 })
                             });
 
                             labelContainer.Children.Add(label);
+                            this.labelContainer.Children.Add(labelContainer);
                         }
-                    }
-
-                    if (this.labelContainer.Children.Count == 0)
-                    {
-                        this.labelContainer.Children.Add(labelContainer);
                     }
                 }
             }
         }
-
     }
 
     private async void BlitzchatClicked(object sender, EventArgs e)
