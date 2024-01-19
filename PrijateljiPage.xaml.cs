@@ -11,10 +11,10 @@ public partial class PrijateljiPage : ContentPage
     public Dictionary<string, Prijateljstva> prijateljstva = new Dictionary<string, Prijateljstva>();
     public Dictionary<string, Uporabnik> prijatelji = new Dictionary<string, Uporabnik>();
     public PrijateljiPage()
-	{
+    {
         DisplayPrijateljstva();
         InitializeComponent();
-	}
+    }
 
     public async void DisplayPrijateljstva()
     {
@@ -36,39 +36,47 @@ public partial class PrijateljiPage : ContentPage
         {
             foreach (var prijatelj in prijateljstva)
             {
-                StackLayout labelContainer = new StackLayout
-                {
-                    Orientation = StackOrientation.Horizontal
-                };
+                string prijateljstvaKey = prijatelj.Key;
+                Prijateljstva prijateljstvo = prijatelj.Value;
 
                 if (prijatelj.Value.uid1 == UserID.ToString() || prijatelj.Value.uid2 == UserID.ToString() && prijatelj.Value.IsFriendConfirmed == true)
                 {
+                    StackLayout labelContainer = new StackLayout
+                    {
+                        Orientation = StackOrientation.Horizontal
+                    };
+
                     foreach (var user in prijatelji)
                     {
-                        if (user.Key.ToString() == prijatelj.Value.uid1 || user.Key.ToString() == prijatelj.Value.uid2 && user.Key.ToString() != UserID.ToString() )
+                        if (user.Key.ToString() == prijatelj.Value.uid1 || user.Key.ToString() == prijatelj.Value.uid2 && user.Key.ToString() != UserID.ToString())
                         {
                             Label label = new Label
                             {
                                 Text = user.Value.Email.ToString(),
                                 FontSize = 18,
-                                TextColor = Color.FromRgb(255,255,255)
+                                TextColor = Color.FromRgb(0, 0, 0)
                             };
 
                             label.GestureRecognizers.Add(new TapGestureRecognizer
                             {
                                 Command = new Command(async () =>
                                 {
-                                    await Navigation.PushAsync(new ChatPage());
+                                    await Navigation.PushAsync(new ChatPage(prijateljstvaKey, UserID, user.Key.ToString()));
                                 })
                             });
 
                             labelContainer.Children.Add(label);
-                            this.labelContainer.Children.Add(labelContainer);
                         }
+                    }
+
+                    if (this.labelContainer.Children.Count == 0)
+                    {
+                        this.labelContainer.Children.Add(labelContainer);
                     }
                 }
             }
         }
+
     }
 
     private async void BlitzchatClicked(object sender, EventArgs e)
@@ -79,7 +87,7 @@ public partial class PrijateljiPage : ContentPage
 
     private async void OnIzpisButtonClicked(object sender, EventArgs e)
     {
-        bool result = await DisplayAlert("Pozor!", "Ste prepri?ani da se želite izpisati?", "Da", "Ne");
+        bool result = await DisplayAlert("Pozor!", "Ste prepri?ani da se Å¾elite izpisati?", "Da", "Ne");
 
         if (result)
         {

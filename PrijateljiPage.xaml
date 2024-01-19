@@ -29,7 +29,7 @@
 
         <!-- Main -->
         <StackLayout x:Name="labelContainer" Grid.Row="1" VerticalOptions="Start" Padding="20" Spacing="10">
-            
+
         </StackLayout>
 
         <!-- Footer -->
