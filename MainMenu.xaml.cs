@@ -13,15 +13,15 @@ public partial class MainMenu : ContentPage
 
         if (result)
         {
-            //Uporabnika izpise, vrne na prijavo
+            await SecureStorage.Default.SetAsync("UserID", null);
             await Navigation.PushAsync(new MainPage());
-        }
-        else
-        {
-            //Nic se ne zgodi
         }
     }
 
+    private async void BlitzchatClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new MainMenu());
+    }
     private async void OnProfileTabClicked(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new ProfilePage());

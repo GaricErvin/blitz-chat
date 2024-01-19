@@ -5,6 +5,8 @@ using Google.Cloud.Firestore;
 using FirebaseAdmin;
 using Firebase.Database.Query;
 using blitz_chat.Models;
+using System.Text.RegularExpressions;
+
 namespace blitz_chat;
 
 public partial class RegistrationPage : ContentPage
@@ -32,7 +34,7 @@ public partial class RegistrationPage : ContentPage
     }
     private async void RegisterButton_Clicked(object sender, EventArgs e)
     {
-        if (EmailEntry.Text != null & PasswordEntry.Text != null)
+        if (Regex.IsMatch(EmailEntry.Text, "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$") & Regex.IsMatch(PasswordEntry.Text, "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"))
         {
             if (PasswordEntry.Text == PasswordEntry2.Text)
             {

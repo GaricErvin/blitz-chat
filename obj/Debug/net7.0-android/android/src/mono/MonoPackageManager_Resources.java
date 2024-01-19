@@ -11,6 +11,7 @@ public class MonoPackageManager_Resources {
 		"FirebaseAdmin.dll",
 		"Firebase.Auth.dll",
 		"Firebase.dll",
+		"Firebase.Storage.dll",
 		"FireSharp.dll",
 		"Google.Api.CommonProtos.dll",
 		"Google.Api.Gax.dll",
