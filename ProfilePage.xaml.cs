@@ -7,6 +7,7 @@ using Firebase.Storage;
 using Firebase.Auth;
 using Microsoft.Maui.Controls.PlatformConfiguration;
 using System.Diagnostics;
+using System.Text.RegularExpressions;
 
 namespace blitz_chat;
 
@@ -36,17 +37,18 @@ public partial class ProfilePage : ContentPage
         });
 
 
-        FirebaseResponse response = await client.GetAsync("Uporabniki/"+UserID);
+        FirebaseResponse response = await client.GetAsync("Uporabniki/" + UserID);
         Uporabnik uporabnik = response.ResultAs<Uporabnik>();
 
         email.Text = uporabnik.Email.ToString();
         status.Text = uporabnik.Status.ToString();
-        ProfileImage.Source = uporabnik.Profilna.ToString();
+        ProfileImageURI.Uri = new Uri("https://firebasestorage.googleapis.com/v0/b/blitzchat-4a405.appspot.com/o/Profilne%2F" + UserID + "?alt=media");
         profileImage = uporabnik.Profilna.ToString();
     }
 
     public void flushCache()
     {
+
         var cacheDir = FileSystem.CacheDirectory;
         if (Directory.Exists(cacheDir))
         {
@@ -139,18 +141,18 @@ public partial class ProfilePage : ContentPage
                 Title = "Pick Image"
             });
 
-            if(result != null)
+            if (result != null)
             {
                 await SaveImageTodb(result.FullPath.ToString());
                 string UserID = await SecureStorage.Default.GetAsync("UserID");
-                ProfileImage.Source = "https://firebasestorage.googleapis.com/v0/b/blitzchat-4a405.appspot.com/o/Profilne%2F" + UserID + "?alt=media";
+                //ProfileImage.Source = "https://firebasestorage.googleapis.com/v0/b/blitzchat-4a405.appspot.com/o/Profilne%2F" + UserID + "?alt=media";
 
                 flushCache();
             }
-            
+
             return;
         }
-        catch(Exception ex)
+        catch (Exception ex)
         {
             await DisplayAlert("Napaka!", "Datoteka ni vredu", "OK");
         }
@@ -159,12 +161,11 @@ public partial class ProfilePage : ContentPage
 
     private void OnEditIconClicked(object sender, EventArgs e)
     {
-        ProfileImage.Source = "profilna_edit1.png";
+        ProfileImageURI.Uri = new Uri("https://firebasestorage.googleapis.com/v0/b/blitzchat-4a405.appspot.com/o/profilna_edit.png?alt=media");
         CircleFrame.BackgroundColor = Color.FromRgb(211, 211, 211);
 
 
         EditIcon.IsVisible = false;
-        username.IsEnabled = true;
         email.IsEnabled = true;
         status.IsEnabled = true;
         SaveIcon.IsVisible = true;
@@ -173,50 +174,58 @@ public partial class ProfilePage : ContentPage
 
     private async void OnSaveIconClicked(object sender, EventArgs e)
     {
-        string UserID = await SecureStorage.Default.GetAsync("UserID");
-
-        IFirebaseClient client = new FireSharp.FirebaseClient(new FireSharp.Config.FirebaseConfig
+        if (email.Text != null & Regex.IsMatch(email.Text, "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"))
         {
-            AuthSecret = "AIzaSyB3fZ6kPDh-L9njqcFUwx7kKUxiOw0ElGE",
-            BasePath = "https://blitzchat-4a405-default-rtdb.europe-west1.firebasedatabase.app"
-        });
 
 
-        FirebaseResponse response = await client.GetAsync("Uporabniki/" + UserID);
-        Uporabnik uporabnik = response.ResultAs<Uporabnik>();
+            string UserID = await SecureStorage.Default.GetAsync("UserID");
 
-        Uporabnik user = new Uporabnik
-        {
-            Geslo = uporabnik.Geslo,
-            Email = email.Text,
-            Profilna = "https://firebasestorage.googleapis.com/v0/b/blitzchat-4a405.appspot.com/o/Profilne%2F"+UserID+"?alt=media",
-            Status = status.Text
-        };
+            IFirebaseClient client = new FireSharp.FirebaseClient(new FireSharp.Config.FirebaseConfig
+            {
+                AuthSecret = "AIzaSyB3fZ6kPDh-L9njqcFUwx7kKUxiOw0ElGE",
+                BasePath = "https://blitzchat-4a405-default-rtdb.europe-west1.firebasedatabase.app"
+            });
 
-        try
-        {
-            var firebaseRoot = firebase.Child("Uporabniki").Child(UserID);
-            await firebaseRoot.PutAsync(user);
 
-            UserPodatki();
+            FirebaseResponse response = await client.GetAsync("Uporabniki/" + UserID);
+            Uporabnik uporabnik = response.ResultAs<Uporabnik>();
+
+            Uporabnik user = new Uporabnik
+            {
+                Geslo = uporabnik.Geslo,
+                Email = email.Text,
+                Profilna = "https://firebasestorage.googleapis.com/v0/b/blitzchat-4a405.appspot.com/o/Profilne%2F" + UserID + "?alt=media",
+                Status = status.Text
+            };
+
+            try
+            {
+                var firebaseRoot = firebase.Child("Uporabniki").Child(UserID);
+                await firebaseRoot.PutAsync(user);
+
+                await Navigation.PushAsync(new ProfilePage());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error writing to Firebase: {ex.Message}");
+            }
+
+            CircleFrame.BackgroundColor = Color.FromRgb(255, 255, 255);
+            EditIcon.IsVisible = true;
+            email.IsEnabled = false;
+            status.IsEnabled = false;
+            SaveIcon.IsVisible = false;
+            DisbandIcon.IsVisible = false;
         }
-        catch (Exception ex)
+        else
         {
-            Console.WriteLine($"Error writing to Firebase: {ex.Message}");
+            await DisplayAlert("Napaka!", "Prosim vnesite e-mail", "OK");
         }
-
-        CircleFrame.BackgroundColor = Color.FromRgb(255, 255, 255);
-        EditIcon.IsVisible = true;
-        username.IsEnabled = false;
-        email.IsEnabled = false;
-        status.IsEnabled = false;
-        SaveIcon.IsVisible = false;
-        DisbandIcon.IsVisible = false;
     }
 
     private async void ChangeImageClicked(object sender, EventArgs e)
     {
-        if(ProfileImage.Source.ToString() == "File: profilna_edit1.png")
+        if (ProfileImageURI.Uri.ToString() == "https://firebasestorage.googleapis.com/v0/b/blitzchat-4a405.appspot.com/o/profilna_edit.png?alt=media")
         {
             await ImagePickerTapped();
         }
@@ -227,7 +236,6 @@ public partial class ProfilePage : ContentPage
         UserPodatki();
         CircleFrame.BackgroundColor = Color.FromRgb(255, 255, 255);
         EditIcon.IsVisible = true;
-        username.IsEnabled = false;
         email.IsEnabled = false;
         status.IsEnabled = false;
         SaveIcon.IsVisible = false;
