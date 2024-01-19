@@ -1,12 +1,12 @@
-using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
 using blitz_chat.Models;
-using Microsoft.Maui.Storage;
 using Firebase.Database;
 using Firebase.Database.Query;
 using Firebase.Storage;
 using Firebase.Auth;
+using Microsoft.Maui.Controls.PlatformConfiguration;
+using System.Diagnostics;
 
 namespace blitz_chat;
 
@@ -25,6 +25,8 @@ public partial class ProfilePage : ContentPage
 
     private async void UserPodatki()
     {
+        flushCache();
+
         string UserID = await SecureStorage.Default.GetAsync("UserID");
 
         IFirebaseClient client = new FireSharp.FirebaseClient(new FireSharp.Config.FirebaseConfig
@@ -41,6 +43,26 @@ public partial class ProfilePage : ContentPage
         status.Text = uporabnik.Status.ToString();
         ProfileImage.Source = uporabnik.Profilna.ToString();
         profileImage = uporabnik.Profilna.ToString();
+    }
+
+    public void flushCache()
+    {
+        var cacheDir = FileSystem.CacheDirectory;
+        if (Directory.Exists(cacheDir))
+        {
+            Directory.Delete(cacheDir, true);
+        }
+
+        var imageManagerDiskCache = Path.Combine(FileSystem.CacheDirectory, "image_manager_disk_cache");
+
+        if (Directory.Exists(imageManagerDiskCache))
+        {
+            foreach (var imageCacheFile in Directory.EnumerateFiles(imageManagerDiskCache))
+            {
+                Debug.WriteLine($"Deleting {imageCacheFile}");
+                File.Delete(imageCacheFile);
+            }
+        }
     }
 
     private async void BlitzchatClicked(object sender, EventArgs e)
@@ -91,6 +113,9 @@ public partial class ProfilePage : ContentPage
         var auth = new FirebaseAuthProvider(new Firebase.Auth.FirebaseConfig("AIzaSyB3fZ6kPDh-L9njqcFUwx7kKUxiOw0ElGE"));
         var a = await auth.SignInWithEmailAndPasswordAsync("admin@admin.com", "admin1");
 
+        var contentType = "image/png";
+        CancellationToken ct = new CancellationToken();
+
         var task = new FirebaseStorage(
             "blitzchat-4a405.appspot.com",
              new FirebaseStorageOptions
@@ -100,7 +125,7 @@ public partial class ProfilePage : ContentPage
              })
             .Child("Profilne")
             .Child(UserID)
-            .PutAsync(stream);
+            .PutAsync(stream, ct, contentType);
 
         return;
     }
@@ -119,6 +144,8 @@ public partial class ProfilePage : ContentPage
                 await SaveImageTodb(result.FullPath.ToString());
                 string UserID = await SecureStorage.Default.GetAsync("UserID");
                 ProfileImage.Source = "https://firebasestorage.googleapis.com/v0/b/blitzchat-4a405.appspot.com/o/Profilne%2F" + UserID + "?alt=media";
+
+                flushCache();
             }
             
             return;
@@ -170,6 +197,8 @@ public partial class ProfilePage : ContentPage
         {
             var firebaseRoot = firebase.Child("Uporabniki").Child(UserID);
             await firebaseRoot.PutAsync(user);
+
+            UserPodatki();
         }
         catch (Exception ex)
         {
